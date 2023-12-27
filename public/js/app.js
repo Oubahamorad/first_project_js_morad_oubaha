@@ -73,3 +73,15 @@ console.log("m9bol");
 
 let passwerd = prompt("entre passwerd ");
 passwerd = password.trim();
+let mdp=prompt("insert your mdp")
+mdp = mdp.trim()
+while (mdp.includes( ) ||!(/[@#*+-/]/.test(mdp) && mdp.length >= 7)) {
+    mdp=prompt("entrer encore une fois ton mdp")
+}
+
+let confmdp=prompt("repert your mdp")
+while (mdp!== confmdp) {
+    alert("incorect")
+    confmdp=prompt("repert your mdp")
+}
+ 
